@@ -1,0 +1,94 @@
+/*
+
+  File    : style.css
+  Author  : Eduardo Salinas [https://github.com/jeduars/]
+  Date    : 7/13/2019
+  © 2019 overTheNewEarth
+
+  Description : This is the first-gen static landing page stylesheet for
+                overTheNewEarth.com
+
+*/
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+/* background formatting */
+html{
+  padding: 0px;
+  margin: 0px;
+  height : 100%;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  height : 100%;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+#backgroundImage{
+  position: fixed;
+  height : 100%;
+  min-width : 100%;
+  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+  background-repeat: no-repeat;
+  background-image: url(assets/album-audio-background-877019.jpg);
+  background-size: 3392px 1965px;
+  z-index: auto;
+}
+
+#oneLogoDiv{
+  position: fixed;
+  left: calc(50% - 61px);
+  top: 27%;
+}
+
+#oneTitleDiv{
+  position: fixed;
+  left: calc(50% - 114px);
+  top: 44.4%;
+}
+
+#activeSitesDiv{
+  position: fixed;
+  width: auto;
+  top: 51.87%;
+  left: calc(50% - 40px);
+}
+
+#inactiveSitesDiv{
+  width: auto;
+  position: fixed;
+  top: 59.87%;
+  left: calc(50% - 64px);
+}
+
+#comingSoonDiv{
+  position: fixed;
+  top: 65.27%;
+  left: calc(50% - 40px);
+}
+
+#oneLogo{
+  height: 125px;
+  width: 125px;
+}
+
+#oneTitle{
+  height: 56px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+#comingSoon{
+  height: 34px;
+  padding: 8px 0 8px 0;
+}
+
+#youtube, #facebook, #spotify, #github, #mixcloud{
+  height: 28px;
+  padding: 0 8px 0 0;
+}

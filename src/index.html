@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+
+  File    : index.html
+  Author  : Eduardo Salinas [https://github.com/jeduars/]
+  Date    : 7/13/2019
+  © 2019 overTheNewEarth
+
+  Description : This is the first-gen static landing page for
+                overTheNewEarth.com
+
+-->
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script language="Javascript">
+      //Roll a dice for cycling the cheesy phrase thingie on the title...
+      //because apparently I have nothing better to do with my life.
+      var strings = ["#melodicFirst", "Trance is the way.", "Trance and Progressive from Austin,TX / CDMX "];
+      function rollTheDice() {
+         return Math.round(Math.random() * (strings.length-1));
+      }
+
+      //clobber the title.
+      document.title = "overTheNewEarth | " + strings[rollTheDice()];
+    </script>
+    <!--This is a duplicated title tag to apease the google thing-->
+    <title>overTheNewEarth | Trance and Progressive from Austin,TX / CDMX </title>
+    <meta name="description" content="Trance, Progressive, Ambient, EDM and Audio-Software from humans based in Austin,TX and CDMX">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="backgroundImage">
+        <!--
+          We fool the universe by using a div-full of CSS to display the
+          background, why? because I can and because I think this is the only
+          way within my means to replicate the Figma mockup that spawned this
+          site.
+        -->
+    </div>
+
+    <div id="oneLogoDiv">
+      <img id="oneLogo" src="assets/oneLogo.svg"/>
+    </div>
+
+    <div id="oneTitleDiv">
+      <img id="oneTitle" src="assets/mainText.svg"/>
+    </div>
+    <div id="activeSitesDiv">
+      <a href="https://www.youtube.com/channel/UCYKYY9t5wZ3kj9KPuQTxp8w"><img id="youtube"   src="assets/youtube.svg"/></a>
+      <a href="https://www.facebook.com/overTheNewEarth"><img id="facebook"  src="assets/facebook.svg"/></a>
+    </div>
+    <div id="inactiveSitesDiv">
+      <img id="spotify"   src="assets/spotify.svg"/>
+      <img id="mixcloud"  src="assets/mixcloud.svg"/>
+      <img id="github"    src="assets/github.svg"/>
+    </div>
+    <div id="comingSoonDiv">
+      <img id="comingSoonText" src="assets/comingSoon.svg"/>
+    </div>
+
+
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  </body>
+</html>
