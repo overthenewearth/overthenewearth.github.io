@@ -29,47 +29,51 @@ body{
   color: #FFFFFF;
 }
 
+div{
+  border-color:blueviolet;
+  display: table;
+  margin: auto;
+}
+
+#container{
+  width: 85%;
+  margin: auto;
+  text-align: center
+}
+
 #backgroundImage{
   position: fixed;
   height : 100%;
   min-width : 100%;
   background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
   background-repeat: no-repeat;
-  background-image: url(assets/album-audio-background-877019.jpg);
-  background-size: 3392px 1965px;
+  background-image: url(assets/background.svg);
   z-index: auto;
 }
 
 #oneLogoDiv{
-  position: fixed;
-  left: calc(50% - 61px);
-  top: 27%;
+  padding-top: 2%;
 }
 
 #oneTitleDiv{
-  position: fixed;
-  left: calc(50% - 114px);
-  top: 44.4%;
+}
+
+#textDiv{
 }
 
 #activeSitesDiv{
-  position: fixed;
-  width: auto;
-  top: 51.87%;
-  left: calc(50% - 40px);
+  padding-top: 15px;
 }
 
 #inactiveSitesDiv{
-  width: auto;
-  position: fixed;
-  top: 59.87%;
-  left: calc(50% - 64px);
+  padding-top: 15px;
 }
 
 #comingSoonDiv{
-  position: fixed;
-  top: 65.27%;
-  left: calc(50% - 40px);
+}
+
+#copyDiv{
+  padding-top: 60px;
 }
 
 #oneLogo{
@@ -83,12 +87,17 @@ body{
   padding-bottom: 13px;
 }
 
+#text{
+  margin:5px auto;
+}
+
+
 #comingSoon{
   height: 34px;
   padding: 8px 0 8px 0;
 }
 
-#youtube, #facebook, #spotify, #github, #mixcloud{
-  height: 28px;
-  padding: 0 8px 0 0;
+#youtube, #facebook, #spotify, #github, #soundcloud, #mixcloud, #applemusic, #twitter, #beatport{
+  height: 34px;
+  padding: 0 6px 0 0;
 }
