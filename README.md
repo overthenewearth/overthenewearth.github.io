@@ -1,9 +1,9 @@
 # oneLanding
 
-This repo holds the source files for  the  first-gen static landing page for overTheNewEarth.com 
+This repo holds the source files for  the  first-gen static landing page for overTheNewEarth.com
 
 ## Build process
-This site is mostly static so building is not neccessary.
+This site is completely static so building is not necessary.
 
 ## Deployment
 This website is published to https://www.overthenewearth.com/ and hosted on netlify.
@@ -12,5 +12,4 @@ This website is published to https://www.overthenewearth.com/ and hosted on netl
   - Eduardo Salinas [https://www.github.com/jeduars]
 
 ## License
-
-
+mpl-2.0
