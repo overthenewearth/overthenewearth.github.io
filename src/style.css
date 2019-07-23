@@ -27,6 +27,10 @@ body{
   height : 100%;
   background: #000000;
   color: #FFFFFF;
+  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 div{
@@ -45,14 +49,37 @@ div{
   position: fixed;
   height : 100%;
   min-width : 100%;
-  background-position: center center; /* First value is from left and second is from top. You can use use number as well*/
-  background-repeat: no-repeat;
-  background-image: url(assets/background.svg);
-  z-index: auto;
 }
 
+@media only screen and (max-width: 900px) {
+  body{
+    background-image: url(assets/vSmall.png);
+  }
+}
+
+
+@media only screen and (min-width:901px) and (max-width: 1920px) {
+  body{
+    background-image: url(assets/small.png);
+  }
+}
+
+
+@media only screen and (min-width:1921px) and  (max-width: 2160px) {
+  body{
+    background-image: url(assets/kBig.png);
+  }
+}
+
+@media only screen and (min-width:2161px) {
+  body{
+    background-image: url(assets/big.png);
+  }
+}
+
+
 #oneLogoDiv{
-  padding-top: 2%;
+  padding-top: 4%;
 }
 
 #oneTitleDiv{
